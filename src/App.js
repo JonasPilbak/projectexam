@@ -1,23 +1,34 @@
-import logo from './logo.svg';
+
 import './App.css';
+
+import ManagerLogin from "./Components/ManagerLogin";
+import IdeaPage from "./Components/IdeaPage";
+import ApiFetch from "./Components/ApiFetch";
+
+import {BrowserRouter as Router, Switch, Route} from "react-router-dom"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+      
+      <Switch>
+      
+      <Route exact path="/" component={IdeaPage}></Route>
+    
+      <Route exact path="/Browse" component={IdeaPage}></Route>
+     
+            
+            <Route exact path="/overview" component={ApiFetch}></Route>
+
+            <Route exact path="/managerLogin" component={ManagerLogin}></Route>
+            
+      </Switch>
+
+      </Router>
+
+
+    
     </div>
   );
 }
