@@ -1,0 +1,24 @@
+.managerLogin {
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+  grid-template: 1fr 5fr 1fr / 0.5fr 1fr 1fr 1fr;
+
+  text-align: center;
+}
+
+.loginForm {
+  display: grid;
+  align-items: center;
+
+  justify-content: center;
+  grid-row: 1;
+  grid-column: 3;
+  text-align: center;
+}
+
+.loading {
+  display: grid;
+  grid-row: 1;
+  grid-column: 2;
+}

@@ -1,0 +1,12 @@
+.IdeaPage {
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+  grid-template: 1fr 5fr 1fr / 0.5fr 1fr 1fr 1fr;
+  background-color: lightblue;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
